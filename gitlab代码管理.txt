@@ -1,0 +1,48 @@
+我的gitlab的
+UserName: jim122
+PassWord: Jim13579
+
+Git global setup(GIT全局设置)
+	git config --global user.name "wangjing"
+	git config --global user.email "jim@siiva.com"
+
+Create a new repository（创建新的存储库）
+	git clone https://gitlab.com/jim122/opencv_yolo3.git
+	cd opencv_yolo3
+	touch README.md
+	git add README.md     (添加一个文件)
+	git commit -m "add README"    （提交文件并在“”里加上说明）
+	git push    (将本地仓库推送到远程仓库）
+
+Push an existing folder（推送现有文件夹）
+	cd existing_folder
+	git init    （初始化）
+	git remote add origin git@https://gitlab.com/jim122/opencv_yolo3.git   （添加远程仓库的关联）
+	git add .   （把工作时的所有变化提交到暂存区）
+	git commit -m "Initial commit"
+	git push -u origin master
+
+Push an existing Git repository（推送现有GIT存储库）
+	cd existing_repo
+	git remote rename origin old-origin  （将原来服务器上的项目代码迁移到另一台服务器上。）
+	git remote add origin https://gitlab.com/jim122/opencv_yolo3.git （指定需要迁移到的目标地址）
+	git push -u origin --all   （全部推送）
+	git push -u origin --tags  （push 的时候不会推送分支）
+
+
+
+
+git常用指令代码=========================
+	git pull  更新本地代码库到最新
+	每次提交代码的时候需要先更新，然后再提交
+	git checkout release/v1.0.0
+	从当前分支切换到release/v1.0.0去，注意切换分之前需要把有改动的commit
+	git merge feature/login
+	从当前分支merge   feature/login分支的内容，这时候如果有两个人修改了同一个文件的同一行，则会有冲突，需要解决当前冲突再提交。
+	release/v1.0.0 feature/login
+	分支的命名一般当前的主线是  release/  开头，后面跟版本号
+	每个人的分支，一般用feature/ 开头，后面跟 分支内容名
+	git最好还是经常提交，然后由一个人把代码合到release上面
+	release上面就是当前开发的最新代码，一般一个版本结束的时候，需要打一个tag，这样以后能回到tag标志的这个节点。
+	当release 上线发布后，需要把master上面的代码更新到最新。
+

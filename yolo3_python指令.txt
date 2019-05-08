@@ -1,0 +1,11 @@
+import cv2 as cv
+# Argparse的作用就是为py文件封装好可以选择的参数，使他们更加灵活，丰富。
+import argparse
+# sys模块包含了与Python解释器和它的环境有关的函数。
+import sys
+# NumPy系统是Python的一种开源的数值计算扩展。这种工具可用来存储和处理大型矩阵
+import numpy as np
+# 通过os模块调用系统命令
+import os.path
+# 调用随机的方法
+import random

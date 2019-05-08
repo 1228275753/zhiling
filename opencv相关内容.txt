@@ -1,0 +1,6 @@
+查询本机opencv人脸识别文件命令：
+sudo find / -iname "*haarcascade_frontalface_default.xml*"
+
+
+本机opencv人脸检测的xml文件地址：
+/home/siiva/opencv-4.1.0/data/haarcascades/haarcascade_frontalface_default.xml

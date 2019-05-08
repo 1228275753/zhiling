@@ -1,0 +1,5 @@
+opencv-python是基于pip3安装的，所以安装流程如下：
+sudo apt-get install gphoto3	#安装这个鬼
+sudo apt-get instal python3-pip		#安装pip3
+sudo pip3 install sh	#编译安装pip组件
+pip install opencv-python	#安装opencv-python
